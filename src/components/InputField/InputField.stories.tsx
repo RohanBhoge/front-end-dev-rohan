@@ -1,6 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import { InputField } from './InputField';
-import { Mail, Lock } from 'lucide-react';
 
 const meta: Meta<typeof InputField> = {
   title: 'Components/InputField',
@@ -91,6 +90,6 @@ export const WithClearButton: Story = {
     label: 'Search',
     value: 'Some text that can be cleared',
     showClearButton: true,
-    onClear: () => alert('Cleared!'), // In a real app, this would update state
+    onClear: () => console.log('Input Cleared!'),
   },
 };
